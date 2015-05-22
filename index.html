@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Making Smart Decisions in Car Shopping</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Making Smart Decisions in Car Shopping">
+  <meta name="author" content="Shaun Collett">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Making Smart Decisions in Car Shopping</h1>
+    <h2>Exploring impacts on fuel economies through cylinders and weight</h2>
+    <p>Shaun Collett<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Why Smart Car Shopping Matters</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Average car ownership in the US has been rising steadily in recent years.  In 
+2002, car ownership averaged just under 5 years, however due to the recession 
+and manufacturing/technology advances, in 2015 consumers are keeping their cars 
+much longer - roughly 8 years.</p>
+
+<p>Due to this increase, we must be more concious when selecting our vehicles.  Fuel 
+consumption should be top of mind during purchase, both because of the carbon 
+emissions AND the ever increase cost of fuel.</p>
+
+<p>We need to plan before effectively for the future, which is where this app comes in.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>A Simply Guage of Fuel Economy</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This Shiny app uses Data Science to offer predictive powers, allowing you to 
+cross-check the vehicle&#39;s stated fuel performance simply by entering the number 
+of cylinders and the vehicles weight (in pounds).</p>
+
+<p><img src="assets/img/interface.png" align="center" width="75%"/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Power Behind Prediction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Through multivariate analysis, we&#39;ve found a strong correlation between the 
+number of cylinders and weight relating to a car&#39;s fuel performance.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Using the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>URL: <a href="https://shauncollett.shinyapps.io/CourseProject/">https://shauncollett.shinyapps.io/CourseProject/</a></p>
+
+<p>To use the app, simply enter the number of cylinders and weight from the car&#39;s 
+specs to see the predicted fuel efficiency, as well as a 95% confidence interval 
+if you&#39;re placing a big bet on accuracy.</p>
+
+<h3>Ideas to Improve</h3>
+
+<p>I recognize this is a very bare bones app, providing information already available 
+on the car&#39;s spec sheet, however I can see several areas where this could be extended, 
+time permitting:</p>
+
+<ol>
+<li>Using fuel consumption to calculate &quot;carbon footprint&quot; over the average lifetime 
+ownership of the car.  This could be benchmarked against other cars.</li>
+<li>Integrate a gas price prediction algorithm to predict total cost of gas over the
+lifetime of owning this car.  This is a more meaningful number for people 
+to wrap their heads around than simply MPG.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Why Smart Car Shopping Matters'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='A Simply Guage of Fuel Economy'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Power Behind Prediction'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Using the App'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

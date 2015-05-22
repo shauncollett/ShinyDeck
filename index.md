@@ -1,0 +1,67 @@
+---
+title       : Making Smart Decisions in Car Shopping
+subtitle    : Exploring impacts on fuel economies through cylinders and weight
+author      : Shaun Collett
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Why Smart Car Shopping Matters
+
+Average car ownership in the US has been rising steadily in recent years.  In 
+2002, car ownership averaged just under 5 years, however due to the recession 
+and manufacturing/technology advances, in 2015 consumers are keeping their cars 
+much longer - roughly 8 years.
+
+Due to this increase, we must be more concious when selecting our vehicles.  Fuel 
+consumption should be top of mind during purchase, both because of the carbon 
+emissions AND the ever increase cost of fuel.
+
+We need to plan before effectively for the future, which is where this app comes in.
+
+--- .class #id 
+
+## A Simply Guage of Fuel Economy
+
+This Shiny app uses Data Science to offer predictive powers, allowing you to 
+cross-check the vehicle's stated fuel performance simply by entering the number 
+of cylinders and the vehicles weight (in pounds).
+
+<img src="assets/img/interface.png" align="center" width="75%"/>
+
+--- .class #id
+
+## The Power Behind Prediction
+
+Through multivariate analysis, we've found a strong correlation between the 
+number of cylinders and weight relating to a car's fuel performance.
+
+<img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+
+--- .class #id
+
+## Using the App
+
+URL: [https://shauncollett.shinyapps.io/CourseProject/](https://shauncollett.shinyapps.io/CourseProject/)
+
+To use the app, simply enter the number of cylinders and weight from the car's 
+specs to see the predicted fuel efficiency, as well as a 95% confidence interval 
+if you're placing a big bet on accuracy.
+
+### Ideas to Improve
+
+I recognize this is a very bare bones app, providing information already available 
+on the car's spec sheet, however I can see several areas where this could be extended, 
+time permitting:
+
+1. Using fuel consumption to calculate "carbon footprint" over the average lifetime 
+ownership of the car.  This could be benchmarked against other cars.
+2. Integrate a gas price prediction algorithm to predict total cost of gas over the
+lifetime of owning this car.  This is a more meaningful number for people 
+to wrap their heads around than simply MPG.
+
